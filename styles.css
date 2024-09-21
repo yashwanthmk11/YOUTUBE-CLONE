@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Roboto", "Arial", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    background-color: #0c1115;
+  }
+  
+  img {
+    cursor: pointer;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav {
+    /* border:2px solid red; */
+    padding: 10px 20px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #0c1115;
+  }
+  
+  .nav-right img {
+    width: 25px;
+    margin-right: 25px;
+  }
+  
+  .nav-right .userImg {
+    border-radius: 50%;
+  }
+  
+  .nav-left img {
+    width: 25px;
+  }
+  
+  .nav-left .ytLogo {
+    width: 105px;
+  }
+  
+  .nav-middle {
+    /* border: 2px solid red; */
+    width: 50%;
+  }
+  
+  .nav-middle .mic-icon {
+    width: 20px;
+  }
+  
+  .search-box {
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+  
+  .search-box input {
+    width: 80%;
+    border: none;
+    padding: 0.4rem;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .search-box img {
+    padding: 10px;
+    /* border: 2px solid green; */
+    /* border-radius: 50px; */
+  }
+  
+  .search-Div {
+    width: 10%;
+    background-color: rgb(72, 72, 72);
+    /* border-radius: 50px; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    justify-content: center;
+  }
+  
+  .mic-div {
+    /* border:2px solid green; */
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+  
+    border-radius: 50%;
+  }
+  
+  .mic-icon {
+    /* border:2px solid red */
+    border-radius: 50px;
+  }
+  
+  .sidebar {
+    /* border: 2px solid red; */
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    padding: 10px;
+    padding-top: 80px;
+  }
+  
+  .smaller-sidebar {
+    width: 5%;
+  }
+  
+  .smaller-sidebar a p {
+    display: none;
+  }
+  
+  .sidebar-upper a {
+    padding: 12px;
+    margin-bottom: 2px;
+  }
+  
+  .sidebar-upper a img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  .sidebar-upper a:first-child {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    background-color: #2e2e2e;
+  }
+  
+  .sidebar-upper a:hover {
+    border-radius: 10px;
+    background-color: #2e2e2e;
+  }
+  
+  .mainContainer {
+    /* border: 2px solid red; */
+    margin-left: 17%;
+    flex-wrap: wrap;
+  }
+  
+  .larger-mainContainer {
+    /* border: 2px solid red; */
+    margin-left: 7%;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    /* border: 2px solid green; */
+    width: 250px;
+    margin-right: 28px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .larger-card {
+    /* border: 2px solid green; */
+    width: 300px;
+    margin-right: 28px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .thumbnailImg {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .logoContainer .userImg {
+    border-radius: 50%;
+    width: 25px;
+    margin-right: 15px;
+  }
+  
+  .video-container {
+    /* border: 2px solid red; */
+    padding-left: 2rem;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .video-container .content-left {
+    flex-basis: 67%;
+    /* border: 2px solid green; */
+  }
+  
+  .video-container .content-left video {
+    width: 100%;
+  }
+  
+  .video-container .content-right {
+    flex-basis: 31%;
+    /* border: 2px solid green; */
+    padding-right: 1rem;
+  }
+  
+  .video-list {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .video-list img {
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .below-video-container {
+    /* border: 2px solid green; */
+    color: white;
+  }
+  
+  .below-video-container h1 {
+    font-size: 1.7rem;
+  }
+  
+  .other-deatils {
+    /* border: 2px solid red; */
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-top: 2rem;
+  }
+  
+  .other-deatils-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    /* border: 2px solid green; */
+  }
+  
+  .channelNameAndIcon,
+  .joinAndSubsButtonContainer,
+  .other-deatils-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .other-deatils-right {
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    width: 20%;
+  }
+  
+  .other-deatils-right img {
+    width: 20px;
+  }
+  
+  .channelIcon {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .subsCount {
+    font-size: 0.7rem;
+  }
+  
+  .joinAndSubsButtonContainer button {
+    /* border: 1px solid red; */
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .joinButton {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: #2e2e2e;
+    color: white;
+  }
+  .subsButton {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+  
+  .descriptionContainer {
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .descriptionContainer p {
+    font-size: 0.9rem;
+  }
+  
+  .commentContainer {
+    margin-top: 2rem;
+  }
+  
+  .commentContainer h1 {
+    font-size: 1.5rem;
+  }
+  .writeCommentContainer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .writeCommentContainer input {
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid grey;
+    color: white;
+    width: 100%;
+  }
+  
+  .previousComments {
+    margin-top: 1rem;
+  }
+  
+  .nameAndComment .channelName {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .sidebar a p,
+    .uploadImg,
+    .notifiationImg,
+    .ytLogo,
+    .mic-div,.search-Div  {
+      display: none;
+    }
+  .card{
+    width: 350px;
+  }
+  
+  .video-container{
+    padding-left: .5rem;
+  }
+  .content{
+    flex-direction: column;
+  }
+  }
