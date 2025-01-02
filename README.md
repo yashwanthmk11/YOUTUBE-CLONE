@@ -36,7 +36,7 @@ YOUTUBE-CLONE-main/
 
 Clone the repository:
 
-git clone [<repository-url>](https://github.com/yashwanthmk11/YOUTUBE-CLONE.git)
+git clone (https://github.com/yashwanthmk11/YOUTUBE-CLONE.git)
 
 Navigate to the project directory:
 
